@@ -37,33 +37,14 @@ const Header = () => {
   </div>
 
   {/* Text with colorful logo-style effect */}
-  <div>
-  <h1
-    className="text-2xl sm:text-2xl font-extrabold bg-clip-text text-transparent transform  "
-  >
-    <span
-      className="text-[#22ff01]"
-      style={{
-        textShadow:
-          '2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000',
-      }}
-    >
-      ART
-    </span>
-    <span
-      className="text-[#f2f2fb]"
-      style={{
-        textShadow:
-          '2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000',
-      }}
-    >
-      {' '}
-      forever
-    </span>
+  <div className=" ">
+  <h1 className="text-3xl font-extrabold drop-shadow-[4px_4px_0_#000] bg-gradient-to-r from-yellow-300 via-green-400 to-blue-500 bg-clip-text text-transparent">
+     Artforever
   </h1>
   <p className="text-sm sm:text-base text-gray-600 hidden sm:block">
-    Crafting Creativity Forever
+   Regd. With Govt. of nct of Delhi
   </p>
+  <hr className='bg-red-500 '></hr>
 </div>
 
 </div>
@@ -73,7 +54,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium"
+                className="text-gray-700 hover:text-green-600 transition-colors duration-300 font-medium"
               >
                 {item.name}
               </a>
@@ -86,14 +67,14 @@ const Header = () => {
               href="https://instagram.com/the_artforever"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center justify-center w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-full hover:scale-110 transition-transform duration-300"
+              className="hidden sm:flex items-center justify-center w-10 h-10 bg-gradient-to-br from-pink-600 to-pink-600 text-white rounded-full hover:scale-110 transition-transform duration-300"
             >
               <Instagram size={18} />
             </a>
             
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 text-gray-700 hover:text-purple-600 transition-colors"
+              className="md:hidden p-2 text-gray-700 hover:text-green-600 transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -109,7 +90,7 @@ const Header = () => {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium px-4 py-2 rounded-lg hover:bg-purple-50"
+                  className="text-gray-700 hover:text-green-600 transition-colors duration-300 font-medium px-4 py-2 rounded-lg hover:bg-green-50"
                 >
                   {item.name}
                 </a>
@@ -119,7 +100,7 @@ const Header = () => {
                   href="https://instagram.com/the_artforever"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-purple-600 px-4 py-2"
+                  className="flex items-center space-x-2 text-green-600 px-4 py-2"
                 >
                   <Instagram size={18} />
                   <span>Follow Us</span>

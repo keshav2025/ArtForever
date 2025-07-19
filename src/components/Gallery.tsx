@@ -1,9 +1,25 @@
 import React, { useState } from 'react';
 import { X, Heart, Eye, Upload, Filter } from 'lucide-react';
+import g1 from '../assets/g1.webp'
+import g2 from '../assets/g2.webp'
+import g3 from '../assets/g3.webp'
+import g4 from '../assets/g4.webp'
+import g5 from '../assets/g5.webp'
+import g6 from '../assets/g6.webp'
+import g7 from '../assets/g7.webp'
+import g8 from '../assets/g8.webp'
+import g9 from '../assets/g9.webp'
+import g10 from '../assets/g10.webp'
+import g11 from '../assets/g11.webp'
+import g12 from '../assets/g12.webp'
+import g13 from '../assets/g13.webp'
+
+
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<null | typeof galleryImages[0]>(null);
+
   const [likedImages, setLikedImages] = useState(new Set());
 
   const categories = [
@@ -16,7 +32,7 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.pexels.com/photos/1047540/pexels-photo-1047540.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g1,
       category: "student",
       title: "Abstract Expression",
       artist: "Sarah Johnson",
@@ -25,7 +41,7 @@ const Gallery = () => {
     },
     {
       id: 2,
-      src: "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g2,
       category: "workshops",
       title: "Portrait Study",
       artist: "Mike Chen",
@@ -34,7 +50,7 @@ const Gallery = () => {
     },
     {
       id: 3,
-      src: "https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g3,
       category: "student",
       title: "Wall Mural Project",
       artist: "Emma Davis",
@@ -43,7 +59,7 @@ const Gallery = () => {
     },
     {
       id: 4,
-      src: "https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g4,
       category: "events",
       title: "Art Exhibition 2024",
       artist: "The Artforever",
@@ -52,7 +68,7 @@ const Gallery = () => {
     },
     {
       id: 5,
-      src: "https://images.pexels.com/photos/1070527/pexels-photo-1070527.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g5,
       category: "student",
       title: "Digital Art Creation",
       artist: "Alex Rivera",
@@ -61,7 +77,7 @@ const Gallery = () => {
     },
     {
       id: 6,
-      src: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g6,
       category: "workshops",
       title: "Sculpture Workshop",
       artist: "Lisa Park",
@@ -70,7 +86,7 @@ const Gallery = () => {
     },
     {
       id: 7,
-      src: "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g7,
       category: "student",
       title: "Watercolor Landscape",
       artist: "Tom Wilson",
@@ -79,7 +95,7 @@ const Gallery = () => {
     },
     {
       id: 8,
-      src: "https://images.pexels.com/photos/1061141/pexels-photo-1061141.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g8,
       category: "events",
       title: "Student Showcase",
       artist: "The Artforever",
@@ -88,10 +104,46 @@ const Gallery = () => {
     },
     {
       id: 9,
-      src: "https://images.pexels.com/photos/1183986/pexels-photo-1183986.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: g9,
       category: "workshops",
       title: "Oil Painting Masterclass",
       artist: "Maria Garcia",
+      likes: 43,
+      views: 198
+    },
+    {
+      id: 10,
+      src: g10,
+      category: "workshops",
+      title: "Oil Painting Masterclass",
+      artist: "Maria Garcia",
+      likes: 43,
+      views: 198
+    },
+    {
+      id: 11,
+      src: g11,
+      category: "workshops",
+      title: "Oil Painting Masterclass",
+      artist: "Varfo",
+      likes: 43,
+      views: 198
+    },
+    {
+      id: 12,
+      src: g12,
+      category: "workshops",
+      title: "Oil Painting Masterclass",
+      artist: "Maria Garcia",
+      likes: 43,
+      views: 198
+    },
+    {
+      id: 13,
+      src: g13,
+      category: "workshops",
+      title: "Water Colour",
+      artist: "Varfo",
       likes: 43,
       views: 198
     }
@@ -116,7 +168,7 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">
             Art Gallery
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
@@ -124,15 +176,15 @@ const Gallery = () => {
           </p>
 
           {/* Submit Art CTA */}
-          <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-4 sm:p-6 text-white mb-6 sm:mb-8 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-r from-green-600 to-green-400 rounded-2xl p-4 sm:p-6 text-white mb-6 sm:mb-8 max-w-2xl mx-auto">
             <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-2 sm:mb-3">
               <Upload size={24} />
               <h3 className="text-lg sm:text-xl font-bold">Submit Your Art</h3>
             </div>
-            <p className="text-purple-100 mb-3 sm:mb-4 text-sm sm:text-base">
+            <p className="text-green-100 mb-3 sm:mb-4 text-sm sm:text-base">
               Share your creative work with our community and get featured in our gallery!
             </p>
-            <button className="bg-white text-purple-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:scale-105 transition-transform duration-300 text-sm sm:text-base">
+            <button className="bg-white text-green-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:scale-105 transition-transform duration-300 text-sm sm:text-base">
               Upload Artwork
             </button>
           </div>
@@ -146,7 +198,7 @@ const Gallery = () => {
               onClick={() => setSelectedCategory(category.id)}
               className={`flex items-center space-x-2 px-3 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
                 selectedCategory === category.id
-                  ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-green-600 to-yellow-300 text-white shadow-lg'
                   : 'bg-white text-gray-600 hover:bg-gray-50 shadow-md'
               }`}
             >

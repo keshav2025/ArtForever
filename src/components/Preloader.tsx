@@ -50,13 +50,12 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
       {/* Animated Logo */}
       <div className="logo-container">
         <div className="logo-text">
-          <span className="letter letter-t">T</span>
-          <span className="letter letter-h">h</span>
-          <span className="letter letter-e">e</span>
-          <span className="letter letter-space"> </span>
+         
+         
           <span className="letter letter-a">A</span>
           <span className="letter letter-r">r</span>
           <span className="letter letter-t2">t</span>
+          <span className='n'> 
           <span className="letter letter-f">f</span>
           <span className="letter letter-o">o</span>
           <span className="letter letter-r2">r</span>
@@ -64,6 +63,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
           <span className="letter letter-v">v</span>
           <span className="letter letter-e3">e</span>
           <span className="letter letter-r3">r</span>
+          </span>
         </div>
         <div className="tagline">Crafting Creativity Forever</div>
       </div>

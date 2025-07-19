@@ -186,7 +186,7 @@ const Courses = () => {
                 </div>
 
                 {/* Price & CTA */}
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
+                {/* <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
                   <div>
                     <div className="text-xl sm:text-2xl font-bold text-gray-800">{course.price}</div>
                     <div className="text-xs sm:text-sm text-gray-500">Starting from</div>
@@ -195,7 +195,7 @@ const Courses = () => {
                     <span>Enroll Now</span>
                     <ArrowRight className="group-hover:translate-x-1 transition-transform" size={16} />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

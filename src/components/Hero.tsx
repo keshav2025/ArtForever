@@ -61,7 +61,7 @@ const Hero = () => {
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-4 sm:left-10 w-16 h-16 sm:w-32 sm:h-32 bg-purple-500/20 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute top-20 left-4 sm:left-10 w-16 h-16 sm:w-32 sm:h-32 bg-green-500/20 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-20 right-4 sm:right-10 w-24 h-24 sm:w-48 sm:h-48 bg-pink-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/4 w-12 h-12 sm:w-24 sm:h-24 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-2000"></div>
       </div>
@@ -72,7 +72,7 @@ const Hero = () => {
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 animate-fade-in-up leading-tight">
             {slides[currentSlide].title}
           </h1>
-          <h2 className="text-lg sm:text-2xl md:text-3xl font-light mb-4 sm:mb-6 text-purple-200 animate-fade-in-up delay-200">
+          <h2 className="text-lg sm:text-2xl md:text-3xl font-light mb-4 sm:mb-6 text-green-200 animate-fade-in-up delay-200">
             {slides[currentSlide].subtitle}
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto animate-fade-in-up delay-400 px-4">

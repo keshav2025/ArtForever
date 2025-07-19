@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Instagram, Send, Clock, MessageCircle } from 'lucide-react';
-
+import logo from '/logo.jpeg'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -101,7 +101,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -131,7 +131,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                     name="course"
                     value={formData.course}
                     onChange={handleChange}
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                   >
                     <option value="">Select a course</option>
                     {courses.map((course) => (
@@ -164,14 +164,14 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 resize-none text-sm sm:text-base"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 resize-none text-sm sm:text-base"
                   placeholder="Tell us about your artistic goals and any questions you have..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 sm:py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
+                className="w-full bg-gradient-to-r from-green-600 to-green-400 text-white py-3 sm:py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
               >
                 <Send size={20} />
                 <span>Send Message</span>
@@ -190,9 +190,9 @@ const Contact = () => {
                     href={info.action}
                     target={info.action.startsWith('http') ? '_blank' : '_self'}
                     rel={info.action.startsWith('http') ? 'noopener noreferrer' : ''}
-                    className="group flex items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200"
+                    className="group flex items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-600 to-green-400 text-white rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <info.icon size={20} />
                     </div>
                     <div>
@@ -209,7 +209,7 @@ const Contact = () => {
             </div>
 
             {/* Quick Actions */}
-            <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-6 sm:p-8 text-white">
+            <div className="bg-gradient-to-r from-green-600 to-green-400 rounded-2xl p-6 sm:p-8 text-white">
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Quick Actions</h3>
               <div className="space-y-3 sm:space-y-4">
                 <button className="w-full bg-white/20 backdrop-blur-sm text-white py-2 sm:py-3 rounded-xl font-medium hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
@@ -226,7 +226,7 @@ const Contact = () => {
             {/* Office Hours */}
             <div className="bg-gray-50 rounded-2xl p-4 sm:p-6">
               <h3 className="font-bold text-gray-800 mb-3 sm:mb-4 flex items-center space-x-2 text-sm sm:text-base">
-                <Clock size={20} className="text-purple-600" />
+                <Clock size={20} className="text-green-600" />
                 <span>Office Hours</span>
               </h3>
               <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-600">

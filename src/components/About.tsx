@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, Eye, Heart, Instagram, Users, Award } from 'lucide-react';
+import aboutimg from '../assets/aboutimg1.webp'
 
 const About = () => {
   const values = [
@@ -32,7 +33,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">
             About The Artforever
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
@@ -68,14 +69,15 @@ const About = () => {
             </div>
           </div>
           <div className="relative">
-            <img
-              src="https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Art Studio"
-              className="rounded-2xl shadow-2xl"
-            />
-            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-white p-4 sm:p-6 rounded-xl shadow-lg">
+          <img
+  src={aboutimg}
+  alt="Art Studio"
+  className="rounded-2xl shadow-2xl h-[600px] w-full max-w-md sm:max-w-lg object-cover"
+/>
+
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:right-12 bg-white p-4 sm:p-6 rounded-xl shadow-lg">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-purple-600">5+</div>
+                <div className="text-2xl sm:text-3xl font-bold text-green-600">5+</div>
                 <div className="text-gray-600 text-sm sm:text-base">Years</div>
               </div>
             </div>
@@ -89,7 +91,7 @@ const About = () => {
               key={index}
               className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-full mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-600 to-green-400 text-white rounded-full mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                 <value.icon size={24} />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">{value.title}</h3>
@@ -102,7 +104,7 @@ const About = () => {
         <div className="bg-gradient-to-r from-green-600 to-green-500 rounded-3xl p-6 sm:p-8 md:p-12 text-white">
           <div className="text-center mb-6 sm:mb-8">
             <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Our Achievements</h3>
-            <p className="text-purple-100 max-w-2xl mx-auto text-sm sm:text-base">
+            <p className="text-green-100 max-w-2xl mx-auto text-sm sm:text-base">
               Numbers that reflect our commitment to excellence and the trust our students place in us.
             </p>
           </div>
@@ -110,7 +112,7 @@ const About = () => {
             {achievements.map((achievement, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl sm:text-4xl md:text-5xl font-bold mb-1 sm:mb-2">{achievement.number}</div>
-                <div className="text-purple-200 text-xs sm:text-sm md:text-base">{achievement.label}</div>
+                <div className="text-green-200 text-xs sm:text-sm md:text-base">{achievement.label}</div>
               </div>
             ))}
           </div>

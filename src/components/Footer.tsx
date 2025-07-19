@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Mail, Phone, MapPin, Heart, ArrowUp } from 'lucide-react';
+import logo from '/logo.jpeg'
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -42,15 +43,43 @@ const Footer = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* Company Info */}
             <div className="lg:col-span-1">
-              <div className="flex items-center space-x-2 sm:space-x-3 mb-4 sm:mb-6">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg sm:text-xl">A</span>
-                </div>
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-bold">The Artforever</h3>
-                  <p className="text-gray-400 text-xs sm:text-sm">Crafting Creativity Forever</p>
-                </div>
-              </div>
+            <div className="flex items-center space-x-4 sm:space-x-4">
+  {/* Bigger logo */}
+  <div className="w-12 h-12 sm:w-12 sm:h-12 rounded-full mb-3 flex items-center justify-center">
+    <img src={logo} alt="Logo" className="w-full h-full  rounded-full object-cover" />
+  </div>
+
+  {/* Text with colorful logo-style effect */}
+  <div>
+  <h1
+    className="text-2xl -ml-2 sm:text-2xl font-extrabold bg-clip-text text-transparent transform  "
+  >
+    <span
+      className="text-[#22ff01]"
+      style={{
+        textShadow:
+          '2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000',
+      }}
+    >
+      ART
+    </span>
+    <span
+      className="text-[#f2f2fb]"
+      style={{
+        textShadow:
+          '2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000',
+      }}
+    >
+      {' '}
+      forever
+    </span>
+  </h1>
+  <p className="text-sm sm:text-base -ml-2 text-white-600 hidden sm:block">
+    Crafting Creativity Forever
+  </p>
+</div>
+
+</div>
               <p className="text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                 Empowering artists through comprehensive education, innovative techniques, 
                 and a supportive community that nurtures creativity and professional growth.
@@ -60,12 +89,12 @@ const Footer = () => {
                   href="https://instagram.com/the_artforever"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                  className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-green-600 to-green-400 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
                 >
                   <Instagram size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </a>
                 <a
-                  href="mailto:info@theartforever.com"
+                  href="mailto:theartforever05@gmail.com"
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300"
                 >
                   <Mail size={16} className="sm:w-[18px] sm:h-[18px]" />
@@ -89,7 +118,7 @@ const Footer = () => {
                       href={link.href}
                       className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group text-sm sm:text-base"
                     >
-                      <span className="w-2 h-2 bg-purple-600 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="w-2 h-2 bg-green-600 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       {link.name}
                     </a>
                   </li>
@@ -107,7 +136,7 @@ const Footer = () => {
                       href={link.href}
                       className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group text-sm sm:text-base"
                     >
-                      <span className="w-2 h-2 bg-purple-600 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="w-2 h-2 bg-green-600 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       {link.name}
                     </a>
                   </li>
@@ -120,24 +149,24 @@ const Footer = () => {
               <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Contact Info</h4>
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-start space-x-2 sm:space-x-3">
-                  <MapPin size={18} className="text-purple-600 mt-1 flex-shrink-0" />
+                  <MapPin size={18} className="text-green-600 mt-1 flex-shrink-0" />
                   <div className="text-gray-400 text-xs sm:text-sm">
                   <p>Khushal Chowk , Near Nalanda Modern</p>
                   <p>Public School , Burari , Delhi 110084</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2 sm:space-x-3">
-                  <Phone size={18} className="text-purple-600 flex-shrink-0" />
+                  <Phone size={18} className="text-green-600 flex-shrink-0" />
                   <div className="text-gray-400 text-xs sm:text-sm">
                     <p>+91 98765 43210</p>
-                    <p>+91 87654 32109</p>
+                    <p>+91xxxxxxxxx</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2 sm:space-x-3">
-                  <Mail size={18} className="text-purple-600 flex-shrink-0" />
+                  <Mail size={18} className="text-green-600 flex-shrink-0" />
                   <div className="text-gray-400 text-xs sm:text-sm">
-                    <p>info@theartforever.com</p>
-                    <p>admissions@theartforever.com</p>
+                    <p>theartforever05@gmail.com</p>
+                   
                   </div>
                 </div>
               </div>
@@ -159,9 +188,9 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-gray-800 border border-gray-700 rounded-l-xl focus:outline-none focus:border-purple-600 transition-colors duration-300 text-sm sm:text-base"
+                  className="flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-gray-800 border border-gray-700 rounded-l-xl focus:outline-none focus:border-green-600 transition-colors duration-300 text-sm sm:text-base"
                 />
-                <button className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 sm:px-6 py-2 sm:py-3 rounded-r-xl font-medium hover:scale-105 transition-transform duration-300 text-sm sm:text-base">
+                <button className="bg-gradient-to-r from-green-600 to-green-400 px-4 sm:px-6 py-2 sm:py-3 rounded-r-xl font-medium hover:scale-105 transition-transform duration-300 text-sm sm:text-base">
                   Subscribe
                 </button>
               </div>
@@ -197,7 +226,7 @@ const Footer = () => {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg z-50"
+        className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-green-600 to-green-400 text-white rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg z-50"
       >
         <ArrowUp size={18} className="sm:w-5 sm:h-5" />
       </button>
