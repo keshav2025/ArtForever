@@ -80,14 +80,14 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 animate-fade-in-up delay-600 px-4">
-            <button className="group bg-gradient-to-r from-green-600 to-green-300 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:scale-105 transition-all duration-300 flex items-center space-x-2 w-full sm:w-auto justify-center">
+            <a href='#courses' className="group bg-gradient-to-r from-green-600 to-green-300 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:scale-105 transition-all duration-300 flex items-center space-x-2 w-full sm:w-auto justify-center">
               <span>Explore Courses</span>
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-            </button>
-            <button className="group border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center space-x-2 w-full sm:w-auto justify-center">
+            </a>
+            <a href='#gallery' className="group border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center space-x-2 w-full sm:w-auto justify-center">
               <Play size={20} />
               <span>Watch Demo</span>
-            </button>
+            </a>
           </div>
 
           {/* Stats */}

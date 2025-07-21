@@ -7,7 +7,8 @@ import Courses from './components/Courses';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
+import FloatingButtons from './components/FloatingButtons';
+import WallArt from './components/WallArt';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -46,9 +47,11 @@ function App() {
       <Hero />
       <About />
       <Courses />
+      <WallArt/>
       <Gallery />
       <Contact />
       <Footer />
+      <FloatingButtons/>
     </div>
   );
 }

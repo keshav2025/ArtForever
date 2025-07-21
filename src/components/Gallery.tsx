@@ -176,7 +176,7 @@ const Gallery = () => {
           </p>
 
           {/* Submit Art CTA */}
-          <div className="bg-gradient-to-r from-green-600 to-green-400 rounded-2xl p-4 sm:p-6 text-white mb-6 sm:mb-8 max-w-2xl mx-auto">
+          {/* <div className="bg-gradient-to-r from-green-600 to-green-400 rounded-2xl p-4 sm:p-6 text-white mb-6 sm:mb-8 max-w-2xl mx-auto">
             <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-2 sm:mb-3">
               <Upload size={24} />
               <h3 className="text-lg sm:text-xl font-bold">Submit Your Art</h3>
@@ -187,7 +187,7 @@ const Gallery = () => {
             <button className="bg-white text-green-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:scale-105 transition-transform duration-300 text-sm sm:text-base">
               Upload Artwork
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Category Filter */}

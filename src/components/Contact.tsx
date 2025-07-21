@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Instagram, Send, Clock, MessageCircle } from 'lucide-react';
 import logo from '/logo.jpeg'
+
+
+
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -12,17 +17,37 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      course: '',
-      message: ''
-    });
-  };
+  
+    emailjs.send(
+      'service_rz2wv72',
+      'template_nzqqryv',
+      {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        course: formData.course,
+        message: formData.message
+      },
+      '__43MecOZpbSzfrQx' // <-- make sure this is your Public Key, copied exactly
+    )
+    .then(
+      (result) => {
+        setSuccessMessage('Message sent successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          course: '',
+          message: ''
+        });
+      },
+      (error) => {
+        setSuccessMessage('Failed to send message. Please try again.');
+      }
+    );
+  }    
+  
+  
 
   const handleChange = (e) => {
     setFormData({
@@ -64,9 +89,11 @@ const Contact = () => {
     "Wall Art Workshop",
     "Other"
   ];
+const [successMessage, setSuccessMessage] = useState('');
+
 
   return (
-    <section id="contact" className="py-12 sm:py-20 bg-white">
+    <section id="contact" className="py-10 sm:py-15 bg-white">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
@@ -88,6 +115,12 @@ const Contact = () => {
                 Fill out the form below and we'll get back to you within 24 hours.
               </p>
             </div>
+            {successMessage && (
+  <div className="mb-4 p-3 bg-green-100 text-green-700 rounded">
+    {successMessage}
+  </div>
+)}
+
 
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
@@ -210,18 +243,37 @@ const Contact = () => {
 
             {/* Quick Actions */}
             <div className="bg-gradient-to-r from-green-600 to-green-400 rounded-2xl p-6 sm:p-8 text-white">
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Quick Actions</h3>
-              <div className="space-y-3 sm:space-y-4">
-                <button className="w-full bg-white/20 backdrop-blur-sm text-white py-2 sm:py-3 rounded-xl font-medium hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
-                  <MessageCircle size={18} />
-                  <span>WhatsApp Chat</span>
-                </button>
-                <button className="w-full bg-white/20 backdrop-blur-sm text-white py-2 sm:py-3 rounded-xl font-medium hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base">
-                  <Clock size={18} />
-                  <span>Schedule Consultation</span>
-                </button>
-              </div>
-            </div>
+  <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Quick Actions</h3>
+  <div className="space-y-3 sm:space-y-4">
+    
+    {/* WhatsApp Chat Button */}
+    <button
+      onClick={() =>
+        window.open("https://wa.me/919876543210", "_blank")
+      }
+      className="w-full bg-white/20 backdrop-blur-sm text-white py-2 sm:py-3 rounded-xl font-medium hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
+    >
+      <MessageCircle size={18} />
+      <span>WhatsApp Chat</span>
+    </button>
+
+    {/* Schedule Consultation Button */}
+    <button
+      onClick={() =>
+        window.open(
+          "https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20schedule%20a%20consultation.",
+          "_blank"
+        )
+      }
+      className="w-full bg-white/20 backdrop-blur-sm text-white py-2 sm:py-3 rounded-xl font-medium hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
+    >
+      <Clock size={18} />
+      <span>Schedule Consultation</span>
+    </button>
+
+  </div>
+</div>
+
 
             {/* Office Hours */}
             <div className="bg-gray-50 rounded-2xl p-4 sm:p-6">

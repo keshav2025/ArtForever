@@ -8,7 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -18,6 +18,7 @@ const Header = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Courses', href: '#courses' },
+    { name: 'Wall Art', href: '#wall-art' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -38,10 +39,11 @@ const Header = () => {
 
   {/* Text with colorful logo-style effect */}
   <div className=" ">
-  <h1 className="text-3xl font-extrabold drop-shadow-[4px_4px_0_#000] bg-gradient-to-r from-yellow-300 via-green-400 to-blue-500 bg-clip-text text-transparent">
-     Artforever
-  </h1>
-  <p className="text-sm sm:text-base text-gray-600 hidden sm:block">
+  <h1 className="text-2xl font-extrabold bg-gradient-to-r from-lime-700 via-green-400 via-40% via-sky-400 to-blue-600 bg-clip-text text-transparent">
+  Artforever
+</h1>
+
+  <p className="text-sm text-gray-600 hidden sm:block">
    Regd. With Govt. of nct of Delhi
   </p>
   <hr className='bg-red-500 '></hr>
