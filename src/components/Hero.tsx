@@ -91,11 +91,11 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 animate-fade-in-up delay-800 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 animate-fade-in-up delay-800 px-2">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-9 h-9 sm:w-16 sm:h-16 bg-white/20 backdrop-blur-sm rounded-full mb-2 sm:mb-4">
-                  <stat.icon size={18} className="sm:w-6 sm:h-6" />
+                <div className="inline-flex items-center justify-center w-4 h-4 sm:w-16 sm:h-16 bg-white/20 backdrop-blur-sm rounded-full mb-2 sm:mb-4">
+                  <stat.icon size={18} className="sm:w-8 sm:h-8" />
                 </div>
                 <div className="text-lg sm:text-3xl font-bold mb-0.5 sm:mb-2">{stat.number}</div>
                 <div className="text-gray-300 text-xs sm:text-base">{stat.label}</div>
@@ -107,16 +107,17 @@ const Hero = () => {
 
       {/* Slide Indicators */}
       <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-white' : 'bg-white/50'
-            }`}
-          />
-        ))}
-      </div>
+  {slides.map((_, index) => (
+    <button
+      key={index}
+      onClick={() => setCurrentSlide(index)}
+      className={`w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-300 ${
+        index === currentSlide ? 'bg-white' : 'bg-white/50'
+      }`}
+    />
+  ))}
+</div>
+
     </section>
   );
 };
