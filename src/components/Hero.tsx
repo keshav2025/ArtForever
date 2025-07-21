@@ -91,14 +91,14 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 animate-fade-in-up delay-800 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 animate-fade-in-up delay-800 px-4">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-white/20 backdrop-blur-sm rounded-full mb-3 sm:mb-4">
-                  <stat.icon size={24} />
+                <div className="inline-flex items-center justify-center w-9 h-9 sm:w-16 sm:h-16 bg-white/20 backdrop-blur-sm rounded-full mb-2 sm:mb-4">
+                  <stat.icon size={18} className="sm:w-6 sm:h-6" />
                 </div>
-                <div className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">{stat.number}</div>
-                <div className="text-gray-300 text-sm sm:text-base">{stat.label}</div>
+                <div className="text-lg sm:text-3xl font-bold mb-0.5 sm:mb-2">{stat.number}</div>
+                <div className="text-gray-300 text-xs sm:text-base">{stat.label}</div>
               </div>
             ))}
           </div>
