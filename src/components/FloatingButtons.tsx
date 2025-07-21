@@ -9,7 +9,7 @@ const FloatingButtons: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   };
 
   return (
-    <div className="fixed bottom-24 right-9 z-50 flex flex-col space-y-3">
+    <div className="fixed bottom-20 right-4 z-50 flex flex-col space-y-3 sm:bottom-24 sm:right-9">
       {/* WhatsApp Button */}
       <button
         onClick={handleWhatsApp}

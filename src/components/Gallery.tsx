@@ -236,7 +236,7 @@ const Gallery = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 flex space-x-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
