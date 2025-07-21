@@ -24,7 +24,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <header className={`fixed top-0 w-full  left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4 py-3 sm:py-4">
@@ -43,7 +43,7 @@ const Header = () => {
   Artforever
 </h1>
 
-  <p className="text-sm text-gray-600">
+  <p className="text-sm sm:text text-gray-600 whitespace-nowrap">
    Regd. With Govt. of nct of Delhi
   </p>
   <hr className='bg-red-500 '></hr>
