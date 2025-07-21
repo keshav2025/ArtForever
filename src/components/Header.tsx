@@ -43,7 +43,7 @@ const Header = () => {
   Artforever
 </h1>
 
-  <p className="text-sm text-gray-600 hidden sm:block">
+  <p className="text-sm text-gray-600">
    Regd. With Govt. of nct of Delhi
   </p>
   <hr className='bg-red-500 '></hr>
