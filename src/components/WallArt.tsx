@@ -4,6 +4,7 @@ import g4 from '../assets/g4.webp'
 import g5 from '../assets/g5.webp'
 import g6 from '../assets/g6.webp'
 import g14 from '../assets/g14.jpeg'
+import wall01 from '../assets/wallart01.webp'
 const WallArt = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -62,24 +63,26 @@ const WallArt = () => {
       icon: Palette,
       color: "from-green-500 to-green-600"
     },
-    {
-      id: 4,
-      name: "3D Wall Art",
-      category: "3d",
-      description: "Innovative 3D wall art installations that create depth and visual impact with modern techniques.",
-      features: [
-        "3D textugreen paintings",
-        "Relief wall sculptures",
-        "Mixed media installations",
-        "Interactive wall art",
-        "LED integrated designs",
-        "Optical illusion murals"
-      ],
-      price: "₹20,000 - ₹3,00,000",
-      image: g14,
-      icon: Star,
-      color: "from-green-500 to-teal-600"
-    }
+    
+      {
+        id: 4,
+        name: "Graffiti + Mural",
+        category: "art",
+        description: "Bold and expressive large-scale wall designs that reflect themes, culture, and creativity through vibrant graffiti and mural techniques.",
+        features: [
+          "Custom themed wall paintings",
+          "Street-style graffiti art",
+          "Hand-painted murals",
+          "Interior and exterior surfaces",
+          "Community and branding murals",
+          "Weather-resistant finishes"
+        ],
+        price: "₹10,000 - ₹1,50,000",
+        image: wall01,
+        icon: Star,
+        color: "from-green-500 to-teal-600"
+      }
+      
   ];
 
   const categories = [

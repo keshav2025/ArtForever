@@ -12,6 +12,8 @@ const Footer = () => {
       { name: 'Bachelor of Fine Arts', href: '#courses' },
       { name: 'Diploma in Fine Arts', href: '#courses' },
       { name: 'Wall Art Workshop', href: '#courses' },
+      { name: 'BFA Entrance preparation', href: '#courses' },
+      { name: 'Art Hobby Course', href: '#courses' },
       { name: 'Online Courses', href: '#courses' }
     ],
     quickLinks: [
@@ -94,13 +96,13 @@ const Footer = () => {
                   <Instagram size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </a>
                 <a
-                  href="mailto:theartforever05@gmail.com"
+                  href="mailto:artforeverteam@gmail.com"
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300"
                 >
                   <Mail size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </a>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918882795326"
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300"
                 >
                   <Phone size={16} className="sm:w-[18px] sm:h-[18px]" />
@@ -158,24 +160,28 @@ const Footer = () => {
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <Phone size={18} className="text-green-600 flex-shrink-0" />
                   <div className="text-gray-400 text-xs sm:text-sm">
-                    <p>+91 98765 43210</p>
-                    <p>+91xxxxxxxxx</p>
+                    <p>+918882795326</p>
+                    <p>+91 8595591719</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <Mail size={18} className="text-green-600 flex-shrink-0" />
                   <div className="text-gray-400 text-xs sm:text-sm">
-                    <p>theartforever05@gmail.com</p>
+                    <p>artforeverteam@gmail.com</p>
+                   
                    
                   </div>
+
+                  
                 </div>
+                
               </div>
             </div>
           </div>
         </div>
 
         {/* Newsletter Section */}
-        <div className="border-t border-gray-800">
+        {/* <div className="border-t border-gray-800">
           <div className="container mx-auto px-4 py-6 sm:py-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-center md:text-left">
@@ -185,18 +191,18 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex w-full md:w-auto max-w-sm">
-                <input
+                {/* <input
                   type="email"
                   placeholder="Enter your email"
                   className="flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-gray-800 border border-gray-700 rounded-l-xl focus:outline-none focus:border-green-600 transition-colors duration-300 text-sm sm:text-base"
-                />
-                <button className="bg-gradient-to-r from-green-600 to-green-400 px-4 sm:px-6 py-2 sm:py-3 rounded-r-xl font-medium hover:scale-105 transition-transform duration-300 text-sm sm:text-base">
+                /> */}
+                {/* <button className="bg-gradient-to-r from-green-600 to-green-400 px-4 sm:px-6 py-2 sm:py-3 rounded-r-xl font-medium hover:scale-105 transition-transform duration-300 text-sm sm:text-base">
                   Subscribe
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        </div> */} 
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800">
@@ -207,7 +213,7 @@ const Footer = () => {
                 <Heart size={16} className="text-red-500" />
                 <span>for artists everywhere.</span>
               </div>
-              <div className="flex items-center space-x-4 sm:space-x-6 text-gray-400 text-xs sm:text-sm">
+              {/* <div className="flex items-center space-x-4 sm:space-x-6 text-gray-400 text-xs sm:text-sm">
                 <a href="#" className="hover:text-white transition-colors duration-300">
                   Privacy Policy
                 </a>
@@ -217,7 +223,7 @@ const Footer = () => {
                 <a href="#" className="hover:text-white transition-colors duration-300">
                   Cookie Policy
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

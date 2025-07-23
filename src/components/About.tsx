@@ -22,10 +22,10 @@ const About = () => {
   ];
 
   const achievements = [
-    { number: "15+", label: "Years of Excellence" },
-    { number: "2000+", label: "Students Graduated" },
-    { number: "50+", label: "Expert Instructors" },
-    { number: "95%", label: "Success Rate" }
+    { number: "5+", label: "Years of Excellence" },
+    { number: "500+", label: "Students Graduated" },
+    { number: "15+", label: "Expert Instructors" },
+    { number: "99%", label: "Success Rate" }
   ];
 
   return (

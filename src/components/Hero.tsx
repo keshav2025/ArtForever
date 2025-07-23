@@ -33,8 +33,8 @@ const Hero = () => {
   }, []);
 
   const stats = [
-    { icon: Users, number: "2000+", label: "Students Enrolled" },
-    { icon: Award, number: "15+", label: "Years Experience" },
+    { icon: Users, number: "500+", label: "Students Enrolled" },
+    { icon: Award, number: "5+", label: "Years Experience" },
     { icon: Palette, number: "50+", label: "Art Forms Covered" }
   ];
 
@@ -106,7 +106,7 @@ const Hero = () => {
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      {/* <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
   {slides.map((_, index) => (
     <button
       key={index}
@@ -116,7 +116,7 @@ const Hero = () => {
       }`}
     />
   ))}
-</div>
+</div> */}
 
     </section>
   );

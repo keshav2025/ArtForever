@@ -11,7 +11,7 @@ const Courses = () => {
       name: "Bachelor of Fine Arts (BFA)",
       description: "Our Bachelor of Fine Arts (BFA) is a 4-year full-time degree course designed for senior students (18+ years) who are passionate about developing their artistic talent into a professional career. This comprehensive program offers in-depth training across all major art mediums and creative disciplines, blending traditional techniques with modern practices to build well-rounded artists.",
       duration: "4 Years",
-      students: "500+",
+      students: "200+",
       level: "Undergraduate",
       modes: ["online", "offline", "hybrid"],
       features: [
@@ -31,7 +31,7 @@ const Courses = () => {
       name: "Diploma in Fine Arts",
       description: "Our Diploma in Fine Arts is a specially curated course for senior students aged 18 and above, designed to nurture creative expression, enhance artistic skills, and provide a solid foundation in multiple art mediums. Whether you're an aspiring professional or a passionate art enthusiast, this comprehensive diploma equips you with the technical knowledge and confidence to explore art at a deeper level.",
       duration: "2 Years",
-      students: "300+",
+      students: "120+",
       level: "Diploma",
       modes: ["online", "offline", "hybrid"],
       features: [
@@ -51,7 +51,7 @@ const Courses = () => {
       name: "Art Hobby Course",
       description: "Discover the joy of art in a relaxed and inspiring environment with our Art Hobby Course – specially designed for anyone aged 15 to 60 years who wants to explore their creative potential, learn new techniques, or simply enjoy art as a fulfilling pastime. Whether you're a beginner, a self-taught artist, or someone looking to rekindle a forgotten passion, this course offers a perfect mix of skill-building and relaxation through drawing, sketching, painting, and mixed media.",
       duration: "3 Months",
-      students: "150+",
+      students: "80+",
       level: "Ages 15–60",
       modes: ["online", "offline", "hybrid"],
       features: [
@@ -69,15 +69,15 @@ const Courses = () => {
     },
     {
       id: 4,
-      name: "Entrance Exam Preparation",
-      description: "Our Entrance Exam Preparation Course is a fully-structured, result-oriented program designed for senior students who aim to secure admission in prestigious government fine arts colleges such as JJ School of Art, Delhi College of Art, BHU, Visva-Bharati, and others. The course focuses equally on both practical and theoretical components required to crack entrance exams, including CUET (Common University Entrance Test).",
+      name: "BFA Entrance  Preparation",
+      description: "Our BFA Entrance Exam Preparation Course is a fully-structured, result-oriented program designed for senior students who aim to secure admission in prestigious government fine arts colleges such as JJ School of Art, Delhi College of Art, BHU, Visva-Bharati, and others. The course focuses equally on both practical and theoretical components required to crack entrance exams, including CUET (Common University Entrance Test).",
       duration: "3 Months",
-      students: "150+",
+      students: "100+",
       level: "For Senior Students – Age 18+",
       modes: ["online", "offline", "hybrid"],
       features: [
         "Theory Preparation Includes",
-        "CUET Entrance Exam Preparation",
+        "CUET BFA Entrance Exam Preparation",
         "Coaching for CUET (Art-related sections) with mock tests & MCQs",
         "Still life, landscapes, portraits, and more",
         "Hands-on projects & personal expression",
@@ -186,7 +186,7 @@ const Courses = () => {
                     </div>
                   </div>
                   {/* Features */}
-                  <div className="mb-4 sm:mb-6">
+                  <div className="mb-4 sm:mb-6 ">
                     <h4 className="font-semibold text-gray-800 mb-2 sm:mb-3 text-sm sm:text-base">What You'll Learn:</h4>
                     <ul className="space-y-2">
                       {showFeatures.map((feature, idx) => (

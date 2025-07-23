@@ -48,25 +48,23 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
       </div>
 
       {/* Animated Logo */}
-      <div className="logo-container">
-        <div className="logo-text">
-         
-         
-          <span className="letter letter-a">A</span>
-          <span className="letter letter-r">r</span>
-          <span className="letter letter-t2">t</span>
-          <span className='n'> 
-          <span className="letter letter-f">f</span>
-          <span className="letter letter-o">o</span>
-          <span className="letter letter-r2">r</span>
-          <span className="letter letter-e2">e</span>
-          <span className="letter letter-v">v</span>
-          <span className="letter letter-e3">e</span>
-          <span className="letter letter-r3">r</span>
-          </span>
-        </div>
-        <div className="tagline">Crafting Creativity Forever</div>
-      </div>
+  {/* Animated Logo */}
+<div className="logo-container">
+  <div className="logo-text text-transparent bg-clip-text  font-bold">
+    <span className="letter letter-a">A</span>
+    <span className="letter letter-r">r</span>
+    <span className="letter letter-t2">t</span>
+    <span className="letter letter-f">f</span>
+    <span className="letter letter-o">o</span>
+    <span className="letter letter-r2">r</span>
+    <span className="letter letter-e2">e</span>
+    <span className="letter letter-v">v</span>
+    <span className="letter letter-e3">e</span>
+    <span className="letter letter-r3">r</span>
+  </div>
+  <div className="tagline font-semibold text-black">Regd. With Govt. of nct of Delhi</div>
+</div>
+
 
       {/* Brush Cursor */}
       <div className="brush-cursor"></div>

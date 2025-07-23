@@ -13,6 +13,20 @@ import g10 from '../assets/g10.webp'
 import g11 from '../assets/g11.webp'
 import g12 from '../assets/g12.webp'
 import g13 from '../assets/g13.webp'
+import work01 from '../assets/wrk01.webp'
+import work02 from '../assets/work02.webp'
+import work03 from '../assets/work03.webp'
+import work04 from '../assets/work04.webp'
+import work05 from '../assets/wrk05.webp'
+import s01 from '../assets/st01.webp'
+import s02 from '../assets/s02.jpeg'
+import s03 from '../assets/s03.webp'
+import s04 from '../assets/s04.webp'
+import s05 from '../assets/s05.webp'
+import s06 from '../assets/s06.webp'
+import s07 from '../assets/s07.webp'
+import s08 from '../assets/s08.webp'
+
 
 
 
@@ -23,10 +37,10 @@ const Gallery = () => {
   const [likedImages, setLikedImages] = useState(new Set());
 
   const categories = [
-    { id: 'all', label: 'All Work', count: 24 },
+    { id: 'all', label: 'All Work', count: 25 },
     { id: 'student', label: 'Student Work', count: 12 },
     { id: 'workshops', label: 'Workshops', count: 8 },
-    { id: 'events', label: 'Events', count: 4 }
+    { id: 'events', label: 'Events', count: 2 }
   ];
 
   const galleryImages = [
@@ -60,7 +74,7 @@ const Gallery = () => {
     {
       id: 4,
       src: g4,
-      category: "events",
+      category: "workspace",
       title: "Art Exhibition 2024",
       artist: "The Artforever",
       likes: 123,
@@ -105,16 +119,18 @@ const Gallery = () => {
     {
       id: 9,
       src: g9,
-      category: "workshops",
+      category: "events",
       title: "Oil Painting Masterclass",
       artist: "Maria Garcia",
       likes: 43,
       views: 198
     },
+    
+
     {
       id: 10,
       src: g10,
-      category: "workshops",
+      category: "events",
       title: "Oil Painting Masterclass",
       artist: "Maria Garcia",
       likes: 43,
@@ -132,7 +148,7 @@ const Gallery = () => {
     {
       id: 12,
       src: g12,
-      category: "workshops",
+      category: "events",
       title: "Oil Painting Masterclass",
       artist: "Maria Garcia",
       likes: 43,
@@ -146,7 +162,116 @@ const Gallery = () => {
       artist: "Varfo",
       likes: 43,
       views: 198
+    },
+    {
+      id: 14,
+      src: work01,
+      category: "workshops",
+      title: "Oil Painting Masterclass",
+      artist: "Maria Garcia",
+      likes: 53,
+      views: 338
+    },
+    {
+      id: 15,
+      src: work02,
+      category: "workshops",
+      title: "Oil Painting Masterclass",
+      artist: "Maria Garcia",
+      likes: 87,
+      views: 498
+    },
+    {
+      id: 16,
+      src: work03,
+      category: "workshops",
+      title: "Oil Painting Masterclass",
+      artist: "Maria Garcia",
+      likes: 19,
+      views: 108
+    },
+    {
+      id: 17,
+      src: work04,
+      category: "workshops",
+      title: "Oil Painting Masterclass",
+      artist: "Maria Garcia",
+      likes: 51,
+      views: 398
+    },
+    {
+      id: s01,
+      src: g1,
+      category: "student",
+      title: "Abstract Expression",
+      artist: "Sarah Johnson",
+      likes: 45,
+      views: 234
+    },
+    {
+      id: 19,
+      src: s02,
+      category: "student",
+      title: "Abstract Expression",
+      artist: "Sarah Johnson",
+      likes: 45,
+      views: 234
+    },
+    {
+      id: 20,
+      src: s03,
+      category: "student",
+      title: "Abstract Expression",
+      artist: "Sarah Johnson",
+      likes: 45,
+      views: 234
+    },
+    {
+      id: s04,
+      src: g1,
+      category: "student",
+      title: "Abstract Expression",
+      artist: "Sarah Johnson",
+      likes: 45,
+      views: 234
+    },
+    {
+      id: 22,
+      src: s05,
+      category: "student",
+      title: "Abstract Expression",
+      artist: "Sarah Johnson",
+      likes: 45,
+      views: 234
+    },
+    {
+      id: 23,
+      src: s06,
+      category: "student",
+      title: "Abstract Expression",
+      artist: "Sarah Johnson",
+      likes: 45,
+      views: 234
+    },
+    {
+      id: 24,
+      src: s07,
+      category: "student",
+      title: "Abstract Expression",
+      artist: "Sarah Johnson",
+      likes: 45,
+      views: 234
+    },
+    {
+      id: 25,
+      src: s08,
+      category: "student",
+      title: "Abstract Expression",
+      artist: "Sarah Johnson",
+      likes: 45,
+      views: 234
     }
+
   ];
 
   const filteredImages = selectedCategory === 'all' 
@@ -231,7 +356,7 @@ const Gallery = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4">
                     <h3 className="text-white font-bold text-base sm:text-lg mb-1">{image.title}</h3>
-                    <p className="text-gray-200 text-xs sm:text-sm">by {image.artist}</p>
+                    {/* <p className="text-gray-200 text-xs sm:text-sm">by {image.artist}</p> */}
                   </div>
                 </div>
 
@@ -264,7 +389,7 @@ const Gallery = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1 text-sm sm:text-base">{image.title}</h3>
-                    <p className="text-gray-600 text-xs sm:text-sm">by {image.artist}</p>
+                    {/* <p className="text-gray-600 text-xs sm:text-sm">by {image.artist}</p> */}
                   </div>
                   <div className="text-right text-xs sm:text-sm text-gray-500">
                     <div className="flex items-center space-x-1">

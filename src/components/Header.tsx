@@ -40,10 +40,11 @@ const Header = () => {
   {/* Text with colorful logo-style effect */}
   <div className=" ">
   <h1 className="text-2xl font-extrabold bg-gradient-to-r from-lime-700 via-green-400 via-40% via-sky-400 to-blue-600 bg-clip-text text-transparent">
-  Artforever
+  Art Forever
 </h1>
 
-  <p className="text-sm sm:text text-gray-600 whitespace-nowrap">
+<p className="text-sm sm:text-base text-black font-bold whitespace-nowrap">
+
    Regd. With Govt. of nct of Delhi
   </p>
   <hr className='bg-red-500 '></hr>
