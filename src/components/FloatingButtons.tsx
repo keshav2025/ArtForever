@@ -4,7 +4,7 @@ const FloatingButtons: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const handleWhatsApp = () => {
     const message =
       "Hi! I'm interested in joining your art courses. Please share more details about the available programs and admission process.";
-    const whatsappUrl = `https://wa.me/919599142653?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918595591719?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
