@@ -253,32 +253,50 @@ const WallArt = () => {
 
                 {/* Price & CTA */}
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
-                  <div className="flex flex-col sm:flex-row gap-2">
-                    <a
-                      href={`https://wa.me/919876543210?text=Hello%2C%20I%20am%20interested%20in%20your%20${encodeURIComponent(service.name)}%20service.`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base w-full sm:w-auto"
-                    >
-                      <span>WhatsApp</span>
-                      <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="white"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-        >
-          <path d="M20.52 3.48a11.86 11.86 0 0 0-16.76 0A11.86 11.86 0 0 0 2.3 12.1c0 1.94.5 3.83 1.47 5.49L2 22l4.56-1.73a11.86 11.86 0 0 0 5.54 1.41h.03a11.86 11.86 0 0 0 8.39-3.47 11.86 11.86 0 0 0 0-16.73ZM12.1 20.07c-1.66 0-3.29-.44-4.7-1.26l-.34-.2-2.71 1.03.97-2.64-.22-.34a8.93 8.93 0 0 1 1.37-11.17 8.9 8.9 0 0 1 6.35-2.63c2.38 0 4.61.93 6.3 2.63a8.89 8.89 0 0 1 2.61 6.3c-.01 4.92-4.01 8.93-8.93 8.93Zm5-6.6c-.27-.14-1.58-.78-1.82-.87s-.42-.13-.6.14-.69.86-.84 1.03-.31.2-.57.07a7.29 7.29 0 0 1-2.14-1.32 8.12 8.12 0 0 1-1.5-1.87c-.16-.27 0-.42.12-.56.13-.13.27-.3.4-.45.14-.15.18-.27.27-.44.09-.18.05-.33-.02-.47s-.6-1.45-.83-1.99c-.22-.52-.45-.44-.6-.45l-.5-.01a.96.96 0 0 0-.7.33c-.24.26-.92.89-.92 2.16s.94 2.5 1.08 2.68c.13.17 1.85 2.83 4.5 3.97.63.27 1.12.43 1.5.56.63.2 1.2.17 1.65.1.5-.07 1.58-.64 1.8-1.26.22-.63.22-1.18.16-1.26-.05-.09-.25-.14-.52-.27Z" />
-        </svg>
-                    </a>
-                    <a
-                      href="tel:+919876543210"
-                      className="group bg-gradient-to-r from-green-600 to-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base w-full sm:w-auto"
-                    >
-                      <span>Inquiry by Call</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm10-10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
-                    </a>
-                  </div>
+                <div className="flex gap-2">
+  {/* WhatsApp Icon Button */}
+  <a
+    href={`https://wa.me/919876543210?text=Hello%2C%20I%20am%20interested%20in%20your%20${encodeURIComponent(service.name)}%20service.`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full transition-all duration-300 flex items-center justify-center"
+    aria-label="Contact on WhatsApp"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="white"
+      viewBox="0 0 24 24"
+      width="20"
+      height="20"
+    >
+      <path d="M20.52 3.48a11.86 11.86 0 0 0-16.76 0A11.86 11.86 0 0 0 2.3 12.1c0 1.94.5 3.83 1.47 5.49L2 22l4.56-1.73a11.86 11.86 0 0 0 5.54 1.41h.03a11.86 11.86 0 0 0 8.39-3.47 11.86 11.86 0 0 0 0-16.73ZM12.1 20.07c-1.66 0-3.29-.44-4.7-1.26l-.34-.2-2.71 1.03.97-2.64-.22-.34a8.93 8.93 0 0 1 1.37-11.17 8.9 8.9 0 0 1 6.35-2.63c2.38 0 4.61.93 6.3 2.63a8.89 8.89 0 0 1 2.61 6.3c-.01 4.92-4.01 8.93-8.93 8.93Zm5-6.6c-.27-.14-1.58-.78-1.82-.87s-.42-.13-.6.14-.69.86-.84 1.03-.31.2-.57.07a7.29 7.29 0 0 1-2.14-1.32 8.12 8.12 0 0 1-1.5-1.87c-.16-.27 0-.42.12-.56.13-.13.27-.3.4-.45.14-.15.18-.27.27-.44.09-.18.05-.33-.02-.47s-.6-1.45-.83-1.99c-.22-.52-.45-.44-.6-.45l-.5-.01a.96.96 0 0 0-.7.33c-.24.26-.92.89-.92 2.16s.94 2.5 1.08 2.68c.13.17 1.85 2.83 4.5 3.97.63.27 1.12.43 1.5.56.63.2 1.2.17 1.65.1.5-.07 1.58-.64 1.8-1.26.22-.63.22-1.18.16-1.26-.05-.09-.25-.14-.52-.27Z" />
+    </svg>
+  </a>
+
+  {/* Phone Call Icon Button */}
+  <a
+    href="tel:+919876543210"
+    className="bg-green-600 hover:bg-green-700 text-white p-3 rounded-full transition-all duration-300 flex items-center justify-center"
+    aria-label="Call Us"
+  >
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  className="h-5 w-5 text-red-600"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke="currentColor"
+  strokeWidth="2"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M3 5a2 2 0 012-2h1.28a1 1 0 01.95.68l1.09 3.27a1 1 0 01-.21 1.05l-1.38 1.38a16.05 16.05 0 006.36 6.36l1.38-1.38a1 1 0 011.05-.21l3.27 1.09a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z"
+  />
+</svg>
+
+  </a>
+</div>
+
                 </div>
               </div>
             </div>
