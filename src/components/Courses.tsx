@@ -63,7 +63,7 @@ const Courses = () => {
         "Certificate"
       ],
       price: "₹25,000",
-      image: "https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "https://images.pexels.com/photos/7859283/pexels-photo-7859283.jpeg",
       icon: Brush,
       color: "from-green-500 to-yellow-600"
     },
@@ -84,7 +84,7 @@ const Courses = () => {
         "Certificate"
       ],
       price: "₹25,000",
-      image: "https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "https://images.pexels.com/photos/7859492/pexels-photo-7859492.jpeg",
       icon: Brush,
       color: "from-green-500 to-yellow-600"
     }

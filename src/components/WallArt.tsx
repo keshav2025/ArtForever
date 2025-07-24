@@ -11,7 +11,7 @@ const WallArt = () => {
   const services = [
     {
       id: 1,
-      name: "Residential Wall Art",
+      name: "Mural Painting",
       category: "residential",
       description: "Transform your home with custom wall paintings, murals, and decorative art that reflects your personality.",
       features: [
@@ -29,7 +29,7 @@ const WallArt = () => {
     },
     {
       id: 2,
-      name: "Commercial Wall Art",
+      name: "Poster Art",
       category: "commercial",
       description: "Professional wall art solutions for offices, restaurants, hotels, and retail spaces to enhance brand identity.",
       features: [
@@ -47,9 +47,9 @@ const WallArt = () => {
     },
     {
       id: 3,
-      name: "Artistic Murals",
+      name: "Graffiti Wall Art",
       category: "artistic",
-      description: "Large-scale artistic murals and custom paintings that serve as stunning focal points for any space.",
+      description: "Large-scale Graffiti Wall Art and custom paintings that serve as stunning focal points for any space.",
       features: [
         "Abstract art murals",
         "Nature and landscape themes",
@@ -66,7 +66,7 @@ const WallArt = () => {
     
       {
         id: 4,
-        name: "Graffiti + Mural",
+        name: "Wall Art",
         category: "art",
         description: "Bold and expressive large-scale wall designs that reflect themes, culture, and creativity through vibrant graffiti and mural techniques.",
         features: [

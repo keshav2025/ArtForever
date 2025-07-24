@@ -249,7 +249,7 @@ const [successMessage, setSuccessMessage] = useState('');
     {/* WhatsApp Chat Button */}
     <button
       onClick={() =>
-        window.open("https://wa.me/918595591719", "_blank")
+        window.open("https://wa.me/918882795326", "_blank")
       }
       className="w-full bg-white/20 backdrop-blur-sm text-white py-2 sm:py-3 rounded-xl font-medium hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
     >
@@ -261,7 +261,7 @@ const [successMessage, setSuccessMessage] = useState('');
     <button
       onClick={() =>
         window.open(
-          "https://wa.me/918595591719?text=Hi%2C%20I%20would%20like%20to%20schedule%20a%20consultation.",
+          "https://wa.me/918882795326?text=Hi%2C%20I%20would%20like%20to%20schedule%20a%20consultation.",
           "_blank"
         )
       }

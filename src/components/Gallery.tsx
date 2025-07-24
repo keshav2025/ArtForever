@@ -355,14 +355,14 @@ const Gallery = () => {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4">
-                    <h3 className="text-white font-bold text-base sm:text-lg mb-1">{image.title}</h3>
+                    {/* <h3 className="text-white font-bold text-base sm:text-lg mb-1">{image.title}</h3> */}
                     {/* <p className="text-gray-200 text-xs sm:text-sm">by {image.artist}</p> */}
                   </div>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="absolute top-3 right-3 sm:top-4 sm:right-4 flex space-x-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
-                  <button
+                  {/* <button
                     onClick={(e) => {
                       e.stopPropagation();
                       toggleLike(image.id);
@@ -374,13 +374,13 @@ const Gallery = () => {
                     }`}
                   >
                     <Heart size={14} fill={likedImages.has(image.id) ? 'currentColor' : 'none'} />
-                  </button>
-                  <button
+                  </button> */}
+                  {/* <button
                     onClick={() => setSelectedImage(image)}
                     className="p-1.5 sm:p-2 bg-white/20 text-white rounded-full backdrop-blur-sm hover:bg-white/30 transition-all duration-300"
                   >
                     <Eye size={14} />
-                  </button>
+                  </button> */}
                 </div>
               </div>
 
@@ -388,10 +388,10 @@ const Gallery = () => {
               <div className="p-4 sm:p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-bold text-gray-800 mb-1 text-sm sm:text-base">{image.title}</h3>
+                    {/* <h3 className="font-bold text-gray-800 mb-1 text-sm sm:text-base">{image.title}</h3> */}
                     {/* <p className="text-gray-600 text-xs sm:text-sm">by {image.artist}</p> */}
                   </div>
-                  <div className="text-right text-xs sm:text-sm text-gray-500">
+                  {/* <div className="text-right text-xs sm:text-sm text-gray-500">
                     <div className="flex items-center space-x-1">
                       <Heart size={12} />
                       <span>{image.likes}</span>
@@ -400,7 +400,7 @@ const Gallery = () => {
                       <Eye size={12} />
                       <span>{image.views}</span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -408,7 +408,7 @@ const Gallery = () => {
         </div>
 
         {/* Modal */}
-        {selectedImage && (
+        {/* {selectedImage && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-2 sm:p-4">
             <div className="relative max-w-4xl max-h-full">
               <button
@@ -438,7 +438,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

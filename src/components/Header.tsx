@@ -29,8 +29,7 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-4 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-              {/* Logo */}
+          
               <div className="flex items-center space-x-4 sm:space-x-4">
   {/* Bigger logo */}
   <div className="w-12 h-12 sm:w-12 sm:h-12 rounded-full flex items-center justify-center">

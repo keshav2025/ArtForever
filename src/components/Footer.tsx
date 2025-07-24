@@ -47,42 +47,29 @@ const Footer = () => {
             <div className="lg:col-span-1">
             <div className="flex items-center space-x-4 sm:space-x-4">
   {/* Bigger logo */}
-  <div className="w-12 h-12 sm:w-12 sm:h-12 rounded-full mb-3 flex items-center justify-center">
+  <div className="w-12 h-12 sm:w-12 sm:h-12 rounded-full -mt-5 flex items-center justify-center">
     <img src={logo} alt="Logo" className="w-full h-full  rounded-full object-cover" />
   </div>
 
   {/* Text with colorful logo-style effect */}
-  <div>
+  <div className='-mt-5'>
   <h1
-    className="text-2xl -ml-2 sm:text-2xl font-extrabold bg-clip-text text-transparent transform  "
+    className="text-2xl font-extrabold  bg-gradient-to-r from-lime-700 via-green-400 via-40% via-sky-400 to-blue-600 bg-clip-text text-transparent "
   >
-    <span
-      className="text-[#22ff01]"
-      style={{
-        textShadow:
-          '2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000',
-      }}
-    >
-      ART
-    </span>
-    <span
-      className="text-[#f2f2fb]"
-      style={{
-        textShadow:
-          '2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000',
-      }}
-    >
-      {' '}
-      forever
-    </span>
+   
+      Art
+   
+    
+      Forever
+   
   </h1>
-  <p className="text-sm sm:text-base -ml-2 text-white-600 hidden sm:block">
-    Crafting Creativity Forever
-  </p>
+  <p className="text-[12px] sm:text-[12px] text-white-600 hidden sm:block">
+  Regd. With Govt. of nct of Delhi
+</p>
 </div>
 
 </div>
-              <p className="text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+              <p className="text-gray-400 p-2 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                 Empowering artists through comprehensive education, innovative techniques, 
                 and a supportive community that nurtures creativity and professional growth.
               </p>
@@ -112,8 +99,8 @@ const Footer = () => {
 
             {/* Courses */}
             <div>
-              <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Our Courses</h4>
-              <ul className="space-y-2 sm:space-y-3">
+              <h4 className="text-base sm:text-lg ml-8  font-semibold mb-4 sm:mb-6">Our Courses</h4>
+              <ul className="space-y-2 ml-5  sm:space-y-3">
                 {footerLinks.courses.map((link, index) => (
                   <li key={index}>
                     <a
@@ -130,7 +117,7 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Quick Links</h4>
+              <h4 className="text-base sm:text-lg ml-3 font-semibold mb-4 sm:mb-6">Quick Links</h4>
               <ul className="space-y-2 sm:space-y-3">
                 {footerLinks.quickLinks.map((link, index) => (
                   <li key={index}>
@@ -148,7 +135,7 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div>
-              <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Contact Info</h4>
+              <h4 className="text-base sm:text-lg ml-3  font-semibold mb-4 sm:mb-6">Contact Info</h4>
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-start space-x-2 sm:space-x-3">
                   <MapPin size={18} className="text-green-600 mt-1 flex-shrink-0" />
@@ -160,7 +147,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <Phone size={18} className="text-green-600 flex-shrink-0" />
                   <div className="text-gray-400 text-xs sm:text-sm">
-                    <p>+918882795326</p>
+                    <p>+91 8882795326</p>
                     <p>+91 8595591719</p>
                   </div>
                 </div>
